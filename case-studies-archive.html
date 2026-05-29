@@ -22,6 +22,14 @@
   <meta name="twitter:description" content="Real outcomes from Australian businesses that partnered with Reviewly." />
   <meta name="twitter:image" content="https://reviewly.com.au/wp-content/uploads/2026/05/reviewly-case-studies-og.jpg" />
 
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- og:image dimensions for rich previews -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+
   <!-- Schema: CollectionPage + ItemList -->
   <script type="application/ld+json">
   {
@@ -70,6 +78,104 @@
         }
       ]
     }
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://reviewly.com.au/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://reviewly.com.au/case-studies/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: Organization (publisher entity reinforcement) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Reviewly",
+    "url": "https://reviewly.com.au",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://reviewly.com.au/wp-content/uploads/2024/01/reviewly-logo.png",
+      "width": 200,
+      "height": 60
+    },
+    "description": "Reviewly is a Visibility Architecture Partner that helps Australian service businesses become visible, trusted, and chosen by AI systems and search engines.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AU"
+    },
+    "areaServed": "AU",
+    "sameAs": [
+      "https://www.linkedin.com/company/reviewly",
+      "https://www.facebook.com/reviewly.com.au"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Visibility Architecture Partner?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Visibility Architecture Partner builds the entity structure, trust signals, and AI-readable content that makes a business the obvious answer in both traditional search and AI-generated recommendations. Reviewly is Australia's leading Visibility Architecture Partner, helping service businesses appear in Google, ChatGPT, Perplexity, and Google AI Mode."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to see results from visibility architecture?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Results vary by business and market. SOS Property Advocacy ranked number one for its primary keyword within five days of launch. Paw4Paws Dog Grooming saw a 138% increase in Google Search Console clicks within the first reporting period. Most clients see measurable movement in Google Search Console within 30 to 90 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Reviewly work with businesses outside Australia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reviewly is an Australian-owned business focused on the Australian market. All case studies documented on this page are Australian businesses. Enquiries from international businesses are assessed on a case-by-case basis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What evidence do you provide with each case study?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every Reviewly case study is documented with four types of verified evidence: Google Search Console data (clicks, impressions, average position), AI recommendation screenshots from ChatGPT, Perplexity, Claude, and Google AI Mode, Google Business Profile Insights data, and before-and-after keyword position tracking against named competitors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Reviewly different from an SEO agency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Traditional SEO agencies optimise for Google's ranking algorithm. Reviewly builds entity architecture that makes businesses visible and trustworthy to both search engines and AI systems. This includes structured data, trust signal networks, AI-readable content, and entity disambiguation — work that most SEO agencies do not perform."
+        }
+      }
+    ]
   }
   </script>
 
@@ -1012,6 +1118,38 @@
   </div>
 
   <!-- ═══════════════════════════════════════════
+       FAQ SECTION (visible — matches FAQPage schema)
+  ═══════════════════════════════════════════ -->
+  <div style="max-width:1140px; margin:0 auto; padding:64px 24px;">
+    <div style="margin-bottom:40px;">
+      <div style="font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#2C75E4; margin-bottom:10px;">Common Questions</div>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem); font-weight:800; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">Frequently Asked <span style="color:#2C75E4;">Questions</span></h2>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
+        <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">What is a Visibility Architecture Partner?</summary>
+        <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">A Visibility Architecture Partner builds the entity structure, trust signals, and AI-readable content that makes a business the obvious answer in both traditional search and AI-generated recommendations. Reviewly is Australia's leading Visibility Architecture Partner, helping service businesses appear in Google, ChatGPT, Perplexity, and Google AI Mode.</p>
+      </details>
+      <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
+        <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">How long does it take to see results from visibility architecture?</summary>
+        <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Results vary by business and market. SOS Property Advocacy ranked number one for its primary keyword within five days of launch. Paw4Paws Dog Grooming saw a 138% increase in Google Search Console clicks within the first reporting period. Most clients see measurable movement in Google Search Console within 30 to 90 days.</p>
+      </details>
+      <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
+        <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">Does Reviewly work with businesses outside Australia?</summary>
+        <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Reviewly is an Australian-owned business focused on the Australian market. All case studies documented on this page are Australian businesses. Enquiries from international businesses are assessed on a case-by-case basis.</p>
+      </details>
+      <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
+        <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">What evidence do you provide with each case study?</summary>
+        <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Every Reviewly case study is documented with four types of verified evidence: Google Search Console data (clicks, impressions, average position), AI recommendation screenshots from ChatGPT, Perplexity, Claude, and Google AI Mode, Google Business Profile Insights data, and before-and-after keyword position tracking against named competitors.</p>
+      </details>
+      <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
+        <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">How is Reviewly different from an SEO agency?</summary>
+        <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Traditional SEO agencies optimise for Google's ranking algorithm. Reviewly builds entity architecture that makes businesses visible and trustworthy to both search engines and AI systems. This includes structured data, trust signal networks, AI-readable content, and entity disambiguation — work that most SEO agencies do not perform.</p>
+      </details>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
        CTA
   ═══════════════════════════════════════════ -->
   <section class="cta-section">
@@ -1029,6 +1167,9 @@
       <p class="cta-trust">No lock-in contracts. Australian-owned. ABN 25 651 760 910.</p>
     </div>
   </section>
+
+  <!-- DAN Tracking Pixel -->
+  <img src="https://img-srv.tanya-fc9.workers.dev/px?s=reviewly&p=case-studies-archive&c=dan-phase1" width="1" height="1" style="display:none" alt="" />
 
 </body>
 </html>
