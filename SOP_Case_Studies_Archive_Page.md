@@ -1,4 +1,4 @@
-# SOP: Case Studies Archive Page — Top 1% Technical SEO Implementation
+# SOP: Case Studies Archive Page - Top 1% Technical SEO Implementation
 **File:** `case-studies-archive.html`
 **Target URL:** `https://reviewly.com.au/case-studies/`
 **Assigned to:** Marvin (WordPress Developer)
@@ -104,7 +104,7 @@ In the Social / Open Graph section of the SEO plugin:
 | OG Title | `Client Results \| Visibility Architecture Case Studies \| Reviewly` |
 | OG Description | `Real outcomes from Australian businesses that partnered with Reviewly. See how entity-driven visibility architecture delivers measurable results in AI search, Google, and local discovery.` |
 | OG Image | Upload the 1200x630px JPEG to Media Library and select it here |
-| OG Image Alt | `Reviewly case studies — verified visibility architecture results for Australian businesses` |
+| OG Image Alt | `Reviewly case studies - verified visibility architecture results for Australian businesses` |
 
 ### 2.5 Breadcrumb Configuration
 
@@ -173,10 +173,10 @@ Each case study card references a featured image. Upload the following four imag
 
 | Image File | Alt Text | Used In |
 |---|---|---|
-| `sos-property-advocacy-case-study.jpg` | `SOS Property Advocacy case study — ranked #1 for property advocacy Melbourne in 5 days` | Featured card |
-| `paw4paws-dog-grooming-case-study.jpg` | `Paw4Paws Dog Grooming — AI recommended in ChatGPT and Google AI Mode` | Card 1 |
-| `bela-beauty-college-case-study.jpg` | `Bela Beauty College — 142% increase in Google Search impressions` | Card 2 |
-| `financial-education-share-of-voice-case-study.jpg` | `Financial education firm — 83% Share of Voice defended against Coursera and IG` | Card 3 |
+| `sos-property-advocacy-case-study.jpg` | `SOS Property Advocacy case study - ranked #1 for property advocacy Melbourne in 5 days` | Featured card |
+| `paw4paws-dog-grooming-case-study.jpg` | `Paw4Paws Dog Grooming - AI recommended in ChatGPT and Google AI Mode` | Card 1 |
+| `bela-beauty-college-case-study.jpg` | `Bela Beauty College - 142% increase in Google Search impressions` | Card 2 |
+| `financial-education-share-of-voice-case-study.jpg` | `Financial education firm - 83% Share of Voice defended against Coursera and IG` | Card 3 |
 
 **Image requirements for all card thumbnails:**
 - Dimensions: 800x500px minimum (16:10 ratio)
@@ -294,7 +294,7 @@ The FAQPage schema is embedded in the HTML file's `<head>` but the FAQ questions
 Add the following FAQ section to the HTML file immediately before the CTA section. This is the visible version of the FAQPage schema:
 
 ```html
-<!-- FAQ SECTION — visible content matching FAQPage schema -->
+<!-- FAQ SECTION - visible content matching FAQPage schema -->
 <div style="max-width:1140px; margin:0 auto; padding:64px 24px;">
   <div style="margin-bottom:40px;">
     <div style="font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#2C75E4; margin-bottom:10px;">Common Questions</div>
@@ -319,7 +319,7 @@ Add the following FAQ section to the HTML file immediately before the CTA sectio
     </details>
     <details style="background:#0d1526; border:1px solid rgba(44,117,228,0.18); border-radius:10px; padding:20px 24px;">
       <summary style="font-size:1rem; font-weight:700; color:#ffffff; cursor:pointer; list-style:none;">How is Reviewly different from an SEO agency?</summary>
-      <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Traditional SEO agencies optimise for Google's ranking algorithm. Reviewly builds entity architecture that makes businesses visible and trustworthy to both search engines and AI systems. This includes structured data, trust signal networks, AI-readable content, and entity disambiguation — work that most SEO agencies do not perform.</p>
+      <p style="margin-top:12px; font-size:0.9rem; color:#c8d4e8; line-height:1.7;">Traditional SEO agencies optimise for Google's ranking algorithm. Reviewly builds entity architecture that makes businesses visible and trustworthy to both search engines and AI systems. This includes structured data, trust signal networks, AI-readable content, and entity disambiguation - work that most SEO agencies do not perform.</p>
     </details>
   </div>
 </div>
@@ -435,7 +435,7 @@ All files are in the public GitHub repository: https://github.com/ReviewlyAU/rev
 
 | File | Description |
 |---|---|
-| `case-studies-archive.html` | The complete archive page HTML — paste into WordPress |
+| `case-studies-archive.html` | The complete archive page HTML - paste into WordPress |
 | `SOP_Case_Studies_Archive_Page.md` | This document |
 | `SOP_Paw4Paws_Case_Study.md` | Install SOP for Paw4Paws case study |
 | `SOP_Financial_Education_Case_Study.md` | Install SOP for Financial Education case study |
