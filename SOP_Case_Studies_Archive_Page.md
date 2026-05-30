@@ -55,10 +55,10 @@ Before touching WordPress, confirm the following are ready:
 | Item | Status |
 |---|---|
 | HTML file downloaded from GitHub | [ ] |
-| OG image (1200x630px JPEG) created and ready to upload | [ ] |
-| Thumbnail images for all case study cards uploaded to Media Library | [ ] |
 | Google Search Console access confirmed | [ ] |
 | Yoast SEO or Rank Math plugin active on the site | [ ] |
+
+> **Note:** All images are pre-built and embedded directly in the HTML file as CDN URLs. No image uploads are required. Do not replace the image URLs.
 
 ---
 
@@ -183,46 +183,19 @@ The schema in the HTML file is the authoritative version. Plugin-generated schem
 
 ---
 
-## Step 4: Image Optimisation
+## Step 4: Images
 
-### 4.1 OG / Social Share Image
+All images are pre-built and embedded in the HTML file as CDN-hosted WebP URLs. No uploads, no compression, no Media Library work required.
 
-Create and upload a 1200x630px JPEG to the WordPress Media Library.
-
-**OG image requirements:**
-- Dimensions: exactly 1200x630px
-- Format: JPEG
-- File size: under 300KB (compress with TinyJPG or Squoosh)
-- Content: Reviewly logo on brand blue background (#004AAD), with headline text "Client Results | Visibility Architecture Case Studies"
-
-Update the `og:image` meta tag in the HTML to point to the uploaded file's WordPress URL.
-
-### 4.2 Case Study Card Thumbnail Images
-
-Each case study card references a featured image. Upload the following images to the WordPress Media Library:
-
-| Image File | Alt Text | Used In |
+| Image | Purpose | Status |
 |---|---|---|
-| `sos-property-advocacy-case-study.jpg` | `SOS Property Advocacy case study - ranked #1 for property advocacy Melbourne in 5 days` | Featured card |
-| `paw4paws-dog-grooming-case-study.jpg` | `Paw4Paws Dog Grooming - AI recommended in ChatGPT and Google AI Mode` | Card 1 |
-| `bela-beauty-college-case-study.jpg` | `Bela Beauty College - 142% increase in Google Search impressions` | Card 2 |
-| `financial-education-share-of-voice-case-study.jpg` | `Financial education firm - 83% Share of Voice defended against Coursera and IG` | Card 3 |
+| OG / Social Share Image (1200x630px) | Displays when the page is shared on LinkedIn, Facebook, or via link preview | Pre-built, embedded in `og:image` and `twitter:image` meta tags |
+| SOS Property Advocacy card thumbnail | Featured case study card image | Pre-built, embedded in `<img src>` |
+| Paw4Paws Dog Grooming card thumbnail | Case study grid card image | Pre-built, embedded in `<img src>` |
+| Bela Beauty College card thumbnail | Case study grid card image | Pre-built, embedded in `<img src>` |
+| Financial Education Firm card thumbnail | Case study grid card image | Pre-built, embedded in `<img src>` |
 
-**Image requirements:**
-- Dimensions: 800x500px minimum (16:10 ratio)
-- Format: JPEG or WebP
-- File size: under 150KB each
-- Alt text: as specified in the table above (already set in the HTML file)
-
-After uploading, update the `src` attributes in the HTML file to point to the correct WordPress Media Library URLs.
-
-### 4.3 Image Compression
-
-All images must be compressed before upload. Use:
-- https://tinyjpg.com (free, drag and drop)
-- https://squoosh.app (free, browser-based)
-
-Target file sizes: OG image under 300KB, card thumbnails under 150KB each.
+> **Do not replace any image URLs.** The CDN URLs are permanent and tied to the Reviewly project lifecycle. Replacing them with WordPress Media Library URLs is unnecessary and would break the images if the WordPress uploads are ever moved or deleted.
 
 ---
 
@@ -399,9 +372,9 @@ This is a backlog task, not a blocker for the current launch. The current HTML-b
 | Evergreen stats strip | Yes | Do not add a case study count |
 | Internal links to case study pages | Yes | Verify all resolve after installs |
 | Internal links FROM other pages TO archive | No | Add from homepage, about, services, nav |
-| OG image file | No | Create and upload (1200x630px JPEG) |
-| Card thumbnail images | No | Upload to Media Library, update src in HTML |
-| Image compression | No | Compress all images before upload |
+| OG image file | Yes - CDN hosted | Do not replace the URL |
+| Card thumbnail images (4) | Yes - CDN hosted | Do not replace the URLs |
+| Image compression | Yes - WebP format | No action required |
 | Page caching | No | Confirm WP Rocket or equivalent is active |
 | GSC indexing submission | No | Submit after publishing |
 | Bing Webmaster Tools submission | No | Submit after publishing |
