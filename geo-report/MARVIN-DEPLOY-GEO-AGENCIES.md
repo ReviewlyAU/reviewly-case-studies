@@ -27,9 +27,11 @@
 - **Canonical URL:** https://reviewly.com.au/best-geo-agencies-australia/
 
 ### 4. Featured Image
-- Upload a featured image (1200x630px) for social sharing
+- File: `geo-report/thumbnail-geo-agencies-australia-2026.png` (approved, in this repo)
+- Upload to WordPress Media Library
 - Alt text: `The 7 best GEO agencies in Australia for 2026 — independently verified guide by Reviewly`
-- NOTE: A thumbnail image for this page needs to be generated and added to this folder
+- Set as Featured Image on the page
+- This image is also the OG/Twitter social share card — no separate image needed
 
 ### 5. Page Settings
 - Status: Published
