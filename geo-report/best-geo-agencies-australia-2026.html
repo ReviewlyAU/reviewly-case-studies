@@ -175,59 +175,6 @@
       font-size: 16px;
     }
 
-    /* ---- NAV ---- */
-    .site-nav {
-      background: rgba(27,27,31,0.97);
-      border-bottom: 1px solid rgba(44,117,228,0.2);
-      padding: 0 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(8px);
-    }
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-    }
-    .nav-logo {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: -0.02em;
-    }
-    .nav-logo span { color: var(--blue-accent); }
-    .nav-cta {
-      background: var(--blue-primary);
-      color: var(--white);
-      padding: 0.5rem 1.25rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .nav-cta:hover { background: var(--blue-accent); }
-
-    /* ---- BREADCRUMB ---- */
-    .breadcrumb {
-      background: var(--charcoal-mid);
-      padding: 0.75rem 2rem;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .breadcrumb-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-    .breadcrumb-inner a { color: var(--text-muted); text-decoration: none; }
-    .breadcrumb-inner a:hover { color: var(--blue-accent); }
-    .breadcrumb-inner span { margin: 0 0.4rem; }
 
     /* ---- HERO ---- */
     .hero {
@@ -240,7 +187,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 70% 50%, rgba(44,117,228,0.12) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 70% 50%, rgba(0,74,173,0.18) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-inner {
@@ -282,7 +229,7 @@
     }
     .hero h1 em {
       font-style: normal;
-      background: linear-gradient(90deg, var(--blue-primary), var(--blue-accent));
+      background: linear-gradient(90deg, var(--white), var(--blue-accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -354,16 +301,16 @@
     /* ---- AGENCY CARDS ---- */
     .agency-card {
       background: var(--charcoal-mid);
-      border: 1px solid rgba(44,117,228,0.15);
+      border: 1px solid rgba(0,74,173,0.25);
       border-radius: 4px;
       margin-bottom: 2.5rem;
       overflow: hidden;
       transition: border-color 0.2s;
     }
-    .agency-card:hover { border-color: rgba(44,117,228,0.4); }
+    .agency-card:hover { border-color: rgba(0,74,173,0.5); }
 
     .agency-card-header {
-      background: linear-gradient(135deg, var(--blue-primary) 0%, var(--blue-accent) 100%);
+      background: linear-gradient(135deg, #003a8c 0%, var(--blue-primary) 100%); border-left: 4px solid var(--blue-accent);
       padding: 2rem 2.5rem;
       display: flex;
       align-items: flex-start;
@@ -593,7 +540,7 @@
 
     /* ---- CTA SECTION ---- */
     .cta-section {
-      background: linear-gradient(135deg, var(--blue-primary) 0%, var(--blue-accent) 100%);
+      background: linear-gradient(135deg, #003a8c 0%, var(--blue-primary) 100%); border-left: 4px solid var(--blue-accent);
       border-radius: 4px;
       padding: 3.5rem 2.5rem;
       text-align: center;
@@ -626,49 +573,6 @@
     }
     .cta-btn:hover { opacity: 0.9; }
 
-    /* ---- FOOTER ---- */
-    .site-footer {
-      background: var(--charcoal-mid);
-      border-top: 1px solid rgba(44,117,228,0.15);
-      padding: 2.5rem 2rem;
-      text-align: center;
-    }
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .footer-logo {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: -0.02em;
-      display: inline-block;
-      margin-bottom: 0.75rem;
-    }
-    .footer-logo span { color: var(--blue-accent); }
-    .footer-tagline {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-    }
-    .footer-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-    .footer-links a:hover { color: var(--blue-accent); }
-    .footer-copy {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
 
     /* ---- RESPONSIVE ---- */
     @media (max-width: 768px) {
@@ -685,25 +589,6 @@
   </style>
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a href="https://reviewly.com.au/" class="nav-logo">Review<span>ly</span></a>
-      <a href="https://get.reviewly.com.au/strategic-ai-visibility-assessment" class="nav-cta">Book a Visibility Audit</a>
-    </div>
-  </nav>
-
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb">
-    <div class="breadcrumb-inner">
-      <a href="https://reviewly.com.au/">Home</a>
-      <span>/</span>
-      <a href="https://reviewly.com.au/resources/">Resources</a>
-      <span>/</span>
-      Best GEO Agencies Australia 2026
-    </div>
-  </div>
 
   <!-- HERO -->
   <section class="hero">
@@ -1029,20 +914,6 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a href="https://reviewly.com.au/" class="footer-logo">Review<span>ly</span></a>
-      <p class="footer-tagline">Visibility Architecture Partner | Australia-Wide</p>
-      <div class="footer-links">
-        <a href="https://reviewly.com.au/case-studies/">Case Studies</a>
-        <a href="https://reviewly.com.au/services/">Services</a>
-        <a href="https://reviewly.com.au/geo-agency-assessment-methodology/">Assessment Methodology</a>
-        <a href="https://get.reviewly.com.au/strategic-ai-visibility-assessment">Book an Audit</a>
-      </div>
-      <p class="footer-copy">&copy; 2026 Reviewly. All rights reserved. | <a href="https://reviewly.com.au/privacy-policy/" style="color:inherit;">Privacy Policy</a></p>
-    </div>
-  </footer>
 
 </body>
 </html>
