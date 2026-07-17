@@ -1,0 +1,342 @@
+<div class="page-content-block">
+  <style>
+    /* 
+     * BRAND BIBLE V6 - CONFIRMED COLOURS ONLY
+     * Primary Blue:  #004AAD
+     * Accent Teal:   #34D1BC (accent/highlight only, NOT full background fill)
+     * Dark Charcoal: #1B1B1F
+     * Mid Charcoal:  #252529
+     * White:         #FFFFFF
+     * 
+     * Note: This is a content block for WordPress. The WP theme provides the global body, header, and footer.
+     * These styles are scoped to the content block elements.
+     */
+    .geo-hero {
+      position: relative;
+      background: linear-gradient(135deg, #1B1B1F 0%, #252529 50%, #004AAD 150%);
+      padding: 60px 24px 64px;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,74,173,0.25);
+      overflow: hidden;
+    }
+    .geo-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(52,209,188,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(52,209,188,.06) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(650px 380px at 50% 18%, #000, transparent 80%);
+      -webkit-mask-image: radial-gradient(650px 380px at 50% 18%, #000, transparent 80%);
+    }
+    .geo-hero > * { position: relative; }
+    .geo-eyebrow {
+      display: inline-block;
+      color: #34D1BC;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      border: 1px solid rgba(52,209,188,0.35);
+      padding: 4px 12px;
+      border-radius: 3px;
+    }
+    .geo-hero h1 {
+      color: #FFFFFF;
+      font-size: 36px;
+      max-width: 820px;
+      margin: 0 auto 16px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+    .geo-tag {
+      color: #d1d5db;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .geo-tag em {
+      color: #34D1BC;
+      font-style: normal;
+    }
+    .geo-cta {
+      display: inline-block;
+      background: #34D1BC;
+      color: #1B1B1F;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 0 24px rgba(52,209,188,0.2);
+      transition: all 0.2s ease;
+    }
+    .geo-cta:hover {
+      background: #FFFFFF;
+      box-shadow: 0 0 32px rgba(52,209,188,0.4);
+    }
+    .geo-page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #1B1B1F;
+      color: #d1d5db;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .geo-byline {
+      padding: 16px 32px;
+      background: #252529;
+      border-bottom: 1px solid #2e2e34;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    .geo-byline b { color: #FFFFFF; }
+    .geo-answerbox {
+      margin: 32px 32px 24px;
+      padding: 24px;
+      background: #252529;
+      border: 1px solid #2e2e34;
+      border-left: 5px solid #34D1BC;
+      border-radius: 4px;
+    }
+    .geo-answerbox .geo-lbl {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #34D1BC;
+      margin-bottom: 8px;
+    }
+    .geo-answerbox p {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .geo-sec {
+      padding: 32px;
+      border-bottom: 1px solid #2e2e34;
+    }
+    .geo-sec h2 {
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .geo-sec p {
+      margin-bottom: 16px;
+    }
+    .geo-answerfirst {
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .geo-lead {
+      font-size: 16px;
+      color: #9ca3af;
+    }
+    ul.geo-method, ul.geo-signs {
+      list-style: none;
+      margin: 16px 0;
+      padding: 0;
+    }
+    ul.geo-method li, ul.geo-signs li {
+      padding: 12px 0;
+      border-bottom: 1px dashed #2e2e34;
+    }
+    ul.geo-method b { color: #34D1BC; }
+    ul.geo-signs li::before {
+      content: "✓ ";
+      color: #34D1BC;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+    .geo-insight {
+      margin: 16px 0;
+      padding: 20px;
+      background: rgba(0,74,173,0.1);
+      border-left: 4px solid #004AAD;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    .geo-cite {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    .geo-cite a { color: #34D1BC; text-decoration: none; }
+    .geo-cite a:hover { text-decoration: underline; }
+    .geo-faq q {
+      display: block;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .geo-faq p { margin-bottom: 0; }
+    .geo-proof-card {
+      background: #252529;
+      border: 1px solid #2e2e34;
+      border-radius: 4px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .geo-proof-card h3 {
+      color: #34D1BC;
+      font-size: 18px;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    .geo-proof-stat {
+      font-size: 24px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .geo-related {
+      margin-top: 32px;
+      padding: 32px;
+      background: #1B1B1F;
+    }
+    .geo-related a { color: #34D1BC; text-decoration: none; }
+    .geo-related a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Meta & Schema (To be injected into <head> by WordPress or SEO plugin) -->
+  <!--
+  <title>AI Visibility for Trades & Construction in Australia | Reviewly</title>
+  <meta name="description" content="How Australian trades and construction businesses become understood, trusted, and recommended by AI systems. The definitive GEO framework for contractors.">
+  <link rel="canonical" href="https://reviewly.com.au/trades-and-construction/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Visibility for Trades & Construction in Australia",
+    "description": "How Australian trades and construction businesses become understood, trusted, and recommended by AI systems.",
+    "author": {
+      "@type": "Person",
+      "name": "Tanya Somerton",
+      "url": "https://tanyasomerton.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Reviewly",
+      "url": "https://reviewly.com.au"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://reviewly.com.au/trades-and-construction/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do trades businesses get recommended by AI like ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By giving AI clear, consistent, verifiable information about who you are and what you do. When your licenses, service areas, and reviews are perfectly aligned across the web, AI can recommend you with confidence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this local SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Traditional local SEO optimises pages to rank on Google. Generative Engine Optimisation (GEO) builds the structured entity trust signals that AI systems use to decide who to recommend."
+        }
+      }
+    ]
+  }
+  </script>
+  -->
+
+  <section class="geo-hero">
+    <div class="geo-eyebrow">Industry Focus — Trades & Construction</div>
+    <h1>AI Visibility for Trades & Construction in Australia</h1>
+    <div class="tag geo-tag">Being found isn't the goal anymore — <em>being chosen is.</em></div>
+    <a class="geo-cta" href="/contact/">Request a Visibility Audit →</a>
+  </section>
+
+  <div class="geo-page">
+    <div class="geo-byline">Written by the Reviewly team · Reviewed by <b>Tanya Somerton, AI Visibility Strategist</b> · Last updated July 2026</div>
+
+    <div class="geo-answerbox">
+      <div class="geo-lbl">Quick Answer</div>
+      <p>Trades and construction businesses get recommended by AI when their identity, credentials, and reputation are consistent and verifiable across the sources AI reads. Reviewly builds that trust structure with the REVIEW Method®, ensuring AI systems can recommend your business with absolute confidence.</p>
+    </div>
+
+    <div class="geo-sec">
+      <h2>The shift for Australian contractors</h2>
+      <p><span class="geo-answerfirst">Your customers now start with an AI assistant, not a page of search results.</span> Homeowners, project managers, and commercial developers ask for a recommendation and act on the answer. The question is no longer "do we rank?" — it is "does AI trust us enough to recommend us?"</p>
+    </div>
+
+    <div class="geo-sec">
+      <h2>5 signs your trades business is invisible to AI</h2>
+      <ul class="geo-signs">
+        <li>ChatGPT or Google's AI Overview names competitors but not you when asked for a local contractor.</li>
+        <li>Your business details, such as past addresses or old trading names, differ across directories and your site.</li>
+        <li>Your credentials, Master Builders memberships, and licenses are not stated in a machine-readable format.</li>
+        <li>Your reviews live entirely on one platform and are not corroborated across the broader web.</li>
+        <li>You rank on Google for specific keywords, but never appear in the AI answers above the standard results.</li>
+      </ul>
+    </div>
+
+    <div class="geo-sec">
+      <h2>Why AI overlooks established trades businesses</h2>
+      <p><span class="geo-answerfirst">AI cannot recommend what it does not trust.</span> Many Australian trades businesses have a formidable offline reputation but scattered, inconsistent signals online. To an AI system evaluating options for a high-value contract, that ambiguity reads as risk — so it recommends a competitor with clearer entity signals instead.</p>
+    </div>
+
+    <div class="geo-sec">
+      <h2>How Reviewly builds your visibility</h2>
+      <p class="geo-lead">We are a Visibility Architecture Partner. We turn scattered signals into structured authority using the REVIEW Method® — the five signals AI weighs before recommending a business:</p>
+      <ul class="geo-method">
+        <li><b>Recognised</b> — understood as a distinct, real entity with a defined service area.</li>
+        <li><b>Established</b> — consistent operational details across the sources AI reads.</li>
+        <li><b>Verified</b> — licenses, credentials, and claims backed by checkable evidence.</li>
+        <li><b>Influential</b> — third-party corroboration, including unified reviews.</li>
+        <li><b>Enduring</b> — authority that holds over time, making your business Worth Choosing.</li>
+      </ul>
+    </div>
+
+    <div class="geo-sec">
+      <h2>What our research shows</h2>
+      <div class="geo-insight">In our 2026 local visibility audit, we found that 78% of established Australian trades businesses have fragmented online identities — such as unlinked licenses or conflicting service addresses — making them "too risky" for AI systems to recommend for high-value contracts.</div>
+      <p class="geo-cite">Source: Reviewly 2026 AI Citation & Entity Study. AI systems prioritize corroboration; without it, even highly-rated businesses are excluded from generative answers.</p>
+    </div>
+
+    <div class="geo-sec">
+      <h2>Proof: Jones Plumbing Plus</h2>
+      <p>We applied the REVIEW Method® to Jones Plumbing Plus, a 60-year-old Australian business with three locations. Their challenge was entity confusion across their regional footprint.</p>
+      <div class="geo-proof-card">
+        <h3>The Outcome</h3>
+        <div class="geo-proof-stat">+42% Share of Voice</div>
+        <p>By restructuring their entity data and unifying their trust signals across all three locations, Jones Plumbing Plus secured a 42% increase in local Share of Voice and became the default AI recommendation for regional plumbing supplies in their market.</p>
+      </div>
+      <p><a href="/case-studies/jones-plumbing-plus/" style="color:#34D1BC; text-decoration:none; font-weight:600;">Read the full case study →</a></p>
+    </div>
+
+    <div class="geo-sec geo-faq">
+      <h2>Frequently asked questions</h2>
+      <q>How do trades businesses get recommended by AI like ChatGPT?</q>
+      <p><span class="geo-answerfirst">By giving AI clear, consistent, verifiable information about who you are and what you do.</span> When your licenses, service areas, and reviews are perfectly aligned across the web, AI can recommend you with confidence.</p>
+      
+      <q>Is this local SEO?</q>
+      <p><span class="geo-answerfirst">No.</span> Traditional local SEO optimises pages to rank on Google. Generative Engine Optimisation (GEO) builds the structured entity trust signals that AI systems use to decide who to <em>recommend</em>.</p>
+      
+      <q>How long does it take?</q>
+      <p>It depends on your starting point and the severity of your current entity fragmentation. We set precise expectations after a comprehensive visibility audit rather than promising a fixed timeframe.</p>
+    </div>
+
+    <div class="geo-related">
+      <p class="geo-lead" style="margin-bottom:16px;"><strong>Related resources:</strong></p>
+      <p>→ <a href="/review-method/">The REVIEW Method®</a><br>
+      → <a href="/best-geo-agencies-australia/">2026 GEO Agency Report</a><br>
+      → <a href="/services/">All Visibility Services</a></p>
+      <p style="margin-top:24px;"><a class="geo-cta" href="/contact/">Request a Visibility Audit →</a></p>
+    </div>
+  </div>
+</div>
