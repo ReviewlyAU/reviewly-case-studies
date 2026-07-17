@@ -11,6 +11,16 @@
      * Note: This is a content block for WordPress. The WP theme provides the global body, header, and footer.
      * These styles are scoped to the content block elements.
      */
+    .page-content-block {
+      background: #1B1B1F;
+      color: #d1d5db;
+      font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+      width: 100%;
+    }
+    .page-content-block *, .page-content-block *::before, .page-content-block *::after {
+      box-sizing: border-box;
+    }
     .geo-hero {
       position: relative;
       background: linear-gradient(135deg, #1B1B1F 0%, #252529 50%, #004AAD 150%);
@@ -199,12 +209,21 @@
     }
     .geo-related a { color: #34D1BC; text-decoration: none; }
     .geo-related a:hover { text-decoration: underline; }
+    @media (max-width: 640px) {
+      .geo-hero { padding: 44px 20px 48px; }
+      .geo-hero h1 { font-size: 30px; }
+      .geo-tag { font-size: 18px; }
+      .geo-byline, .geo-sec, .geo-related { padding: 24px 20px; }
+      .geo-answerbox { margin: 24px 20px; padding: 20px; }
+      .geo-sec h2 { font-size: 22px; }
+      .geo-cta { display: block; width: 100%; text-align: center; }
+    }
   </style>
 
   <!-- Meta & Schema (To be injected into <head> by WordPress or SEO plugin) -->
   <!--
-  <title>AI Visibility for Trades & Construction in Australia | Reviewly</title>
-  <meta name="description" content="How Australian trades and construction businesses become understood, trusted, and recommended by AI systems. The definitive GEO framework for contractors.">
+  <title>AI Visibility for Trades & Construction | Reviewly</title>
+  <meta name="description" content="GEO for Australian trades and construction businesses. Build the verified trust signals AI systems use when recommending contractors.">
   <link rel="canonical" href="https://reviewly.com.au/trades-and-construction/">
   <script type="application/ld+json">
   {
@@ -238,7 +257,7 @@
         "name": "How do trades businesses get recommended by AI like ChatGPT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "By giving AI clear, consistent, verifiable information about who you are and what you do. When your licenses, service areas, and reviews are perfectly aligned across the web, AI can recommend you with confidence."
+          "text": "By giving AI clear, consistent, verifiable information about who you are and what you do. When your licences, service areas, and reviews are aligned across the web, AI has clearer evidence for recommending you."
         }
       },
       {
@@ -248,6 +267,14 @@
           "@type": "Answer",
           "text": "No. Traditional local SEO optimises pages to rank on Google. Generative Engine Optimisation (GEO) builds the structured entity trust signals that AI systems use to decide who to recommend."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does AI visibility work take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The timeframe depends on the business's starting point and the severity of its current entity fragmentation. Reviewly sets expectations after a comprehensive visibility audit rather than promising a fixed timeframe."
+        }
       }
     ]
   }
@@ -255,9 +282,9 @@
   -->
 
   <section class="geo-hero">
-    <div class="geo-eyebrow">Industry Focus — Trades & Construction</div>
+    <div class="geo-eyebrow">Industry Focus: Trades & Construction</div>
     <h1>AI Visibility for Trades & Construction in Australia</h1>
-    <div class="tag geo-tag">Being found isn't the goal anymore — <em>being chosen is.</em></div>
+    <div class="tag geo-tag">Being found isn't the goal anymore. <em>Being chosen is.</em></div>
     <a class="geo-cta" href="/contact/">Request a Visibility Audit →</a>
   </section>
 
@@ -266,12 +293,12 @@
 
     <div class="geo-answerbox">
       <div class="geo-lbl">Quick Answer</div>
-      <p>Trades and construction businesses get recommended by AI when their identity, credentials, and reputation are consistent and verifiable across the sources AI reads. Reviewly builds that trust structure with the REVIEW Method®, ensuring AI systems can recommend your business with absolute confidence.</p>
+      <p>Trades and construction businesses strengthen their chance of being recommended by AI when their identity, credentials, and reputation are consistent and verifiable across the sources AI reads. Reviewly builds that trust structure with the REVIEW Method®, giving AI systems clearer evidence for recommending your business.</p>
     </div>
 
     <div class="geo-sec">
       <h2>The shift for Australian contractors</h2>
-      <p><span class="geo-answerfirst">Your customers now start with an AI assistant, not a page of search results.</span> Homeowners, project managers, and commercial developers ask for a recommendation and act on the answer. The question is no longer "do we rank?" — it is "does AI trust us enough to recommend us?"</p>
+      <p><span class="geo-answerfirst">Your customers now start with an AI assistant, not a page of search results.</span> Homeowners, project managers, and commercial developers ask for a recommendation and act on the answer. The question is no longer "do we rank?" It is "does AI trust us enough to recommend us?"</p>
     </div>
 
     <div class="geo-sec">
@@ -279,50 +306,50 @@
       <ul class="geo-signs">
         <li>ChatGPT or Google's AI Overview names competitors but not you when asked for a local contractor.</li>
         <li>Your business details, such as past addresses or old trading names, differ across directories and your site.</li>
-        <li>Your credentials, Master Builders memberships, and licenses are not stated in a machine-readable format.</li>
-        <li>Your reviews live entirely on one platform and are not corroborated across the broader web.</li>
+        <li>Your credentials, Master Builders memberships, and licences are not stated in a machine-readable format.</li>
+        <li>Your customer feedback appears in one source and lacks corroboration across the broader web.</li>
         <li>You rank on Google for specific keywords, but never appear in the AI answers above the standard results.</li>
       </ul>
     </div>
 
     <div class="geo-sec">
       <h2>Why AI overlooks established trades businesses</h2>
-      <p><span class="geo-answerfirst">AI cannot recommend what it does not trust.</span> Many Australian trades businesses have a formidable offline reputation but scattered, inconsistent signals online. To an AI system evaluating options for a high-value contract, that ambiguity reads as risk — so it recommends a competitor with clearer entity signals instead.</p>
+      <p><span class="geo-answerfirst">AI systems need clear evidence before they recommend a business.</span> Many Australian trades businesses have a strong offline reputation but scattered, inconsistent signals online. When an AI system evaluates options for a high-value contract, that ambiguity weakens confidence and gives clearer competitors an advantage.</p>
     </div>
 
     <div class="geo-sec">
       <h2>How Reviewly builds your visibility</h2>
-      <p class="geo-lead">We are a Visibility Architecture Partner. We turn scattered signals into structured authority using the REVIEW Method® — the five signals AI weighs before recommending a business:</p>
+      <p class="geo-lead">We are a Visibility Architecture Partner. We turn scattered signals into structured authority using the REVIEW Method®. These are the five signals AI weighs before recommending a business:</p>
       <ul class="geo-method">
-        <li><b>Recognised</b> — understood as a distinct, real entity with a defined service area.</li>
-        <li><b>Established</b> — consistent operational details across the sources AI reads.</li>
-        <li><b>Verified</b> — licenses, credentials, and claims backed by checkable evidence.</li>
-        <li><b>Influential</b> — third-party corroboration, including unified reviews.</li>
-        <li><b>Enduring</b> — authority that holds over time, making your business Worth Choosing.</li>
+        <li><b>Recognised</b>: understood as a distinct, real entity with a defined service area.</li>
+        <li><b>Established</b>: consistent operational details across the sources AI reads.</li>
+        <li><b>Verified</b>: licences, credentials, and claims backed by checkable evidence.</li>
+        <li><b>Influential</b>: third-party corroboration, including unified reviews.</li>
+        <li><b>Enduring</b>: authority that holds over time, making your business Worth Choosing.</li>
       </ul>
     </div>
 
     <div class="geo-sec">
       <h2>What our research shows</h2>
-      <div class="geo-insight">In our 2026 local visibility audit, we found that 78% of established Australian trades businesses have fragmented online identities — such as unlinked licenses or conflicting service addresses — making them "too risky" for AI systems to recommend for high-value contracts.</div>
-      <p class="geo-cite">Source: Reviewly 2026 AI Citation & Entity Study. AI systems prioritize corroboration; without it, even highly-rated businesses are excluded from generative answers.</p>
+      <div class="geo-insight">In June 2026, Jones Plumbing Plus recorded a 66.9% Share of Voice across 90 tracked keywords. Its Visibility Score reached 60, compared with 28 for Reece and 15 for SP Plus in the same reported comparison.</div>
+      <p class="geo-cite">Source: Reviewly's <a href="/jones-plumbing-plus/">Jones Plumbing Plus case study</a>, June 2026. Results relate to this client, locations, tracked queries, and measurement period. They are not a guarantee of future performance.</p>
     </div>
 
     <div class="geo-sec">
       <h2>Proof: Jones Plumbing Plus</h2>
-      <p>We applied the REVIEW Method® to Jones Plumbing Plus, a 60-year-old Australian business with three locations. Their challenge was entity confusion across their regional footprint.</p>
+      <p>We applied the REVIEW Method® to Jones Plumbing Plus, an independent plumbing supplies, bathroom and kitchen showroom, and trade supplier serving Albury and Corowa. The work clarified what the business offers, addressed website indexing issues, strengthened location evidence, reactivated review activity, and established ongoing visibility monitoring.</p>
       <div class="geo-proof-card">
         <h3>The Outcome</h3>
-        <div class="geo-proof-stat">+42% Share of Voice</div>
-        <p>By restructuring their entity data and unifying their trust signals across all three locations, Jones Plumbing Plus secured a 42% increase in local Share of Voice and became the default AI recommendation for regional plumbing supplies in their market.</p>
+        <div class="geo-proof-stat">66.9% Share of Voice</div>
+        <p>Across 90 tracked keywords, the business recorded 66.9% Share of Voice. Its average position improved from 25.5 to 18.1, an average movement of 7.4 positions across the tracked keyword set.</p>
       </div>
-      <p><a href="/case-studies/jones-plumbing-plus/" style="color:#34D1BC; text-decoration:none; font-weight:600;">Read the full case study →</a></p>
+      <p><a href="/jones-plumbing-plus/" style="color:#34D1BC; text-decoration:none; font-weight:600;">Read the full case study →</a></p>
     </div>
 
     <div class="geo-sec geo-faq">
       <h2>Frequently asked questions</h2>
       <q>How do trades businesses get recommended by AI like ChatGPT?</q>
-      <p><span class="geo-answerfirst">By giving AI clear, consistent, verifiable information about who you are and what you do.</span> When your licenses, service areas, and reviews are perfectly aligned across the web, AI can recommend you with confidence.</p>
+      <p><span class="geo-answerfirst">By giving AI clear, consistent, verifiable information about who you are and what you do.</span> When your licences, service areas, and reviews are aligned across the web, AI has clearer evidence for recommending you.</p>
       
       <q>Is this local SEO?</q>
       <p><span class="geo-answerfirst">No.</span> Traditional local SEO optimises pages to rank on Google. Generative Engine Optimisation (GEO) builds the structured entity trust signals that AI systems use to decide who to <em>recommend</em>.</p>
