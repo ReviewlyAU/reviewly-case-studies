@@ -48,6 +48,17 @@ else:
 if 'rel="canonical" href="https://reviewly.com.au/trades-and-construction/"' not in text:
     errors.append("Self-referencing canonical missing")
 
+for prohibited_text in (
+    "compared with 28 for Reece and 15 for SP Plus",
+    "/services/trades-construction/",
+    "/best-geo-agencies-australia/",
+):
+    if prohibited_text.lower() in text.lower():
+        errors.append(f"Approved change-note prohibition found: {prohibited_text}")
+
+if "<h2>The result in the field</h2>" not in text:
+    errors.append("Approved field-result heading missing")
+
 # Validate commented JSON-LD blocks.
 script_payloads = re.findall(r'<script type="application/ld\+json">\s*(\{.*?\})\s*</script>', text, re.S)
 if len(script_payloads) < 2:

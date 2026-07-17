@@ -19,7 +19,6 @@ The following figures are stated in the approved case study and may be used with
 | Metric | Verified result | Measurement context |
 |---|---:|---|
 | Share of Voice | 66.9% | Across 90 tracked keywords, reported June 2026 |
-| Visibility Score | 60 | Compared with Reece at 28 and SP Plus at 15 in the reported comparison |
 | Average position | 25.5 to 18.1 | Average improvement of 7.4 positions across 90 tracked keywords |
 | Google Business Profile calls | 583 | January to May 2026, reported as +19.7% |
 | Equivalent advertising spend saved | $19,200 | Reported over 31 days in the case study |
@@ -28,6 +27,6 @@ Every result must link to `/jones-plumbing-plus/` and state that results relate 
 
 ## Claims guardrail
 
-No broader percentage about the Australian trades sector has been approved for use. The page therefore uses the client-specific **66.9% Share of Voice across 90 tracked keywords** as its dated evidence point. Statements about AI recommendations remain directional and avoid claiming knowledge of a proprietary model’s exact weighting.
+No broader percentage about the Australian trades sector has been approved for use. The proof card uses the client-specific **66.9% Share of Voice across 90 tracked keywords** as its dated evidence point. The field-result section uses approved de-personalised wording and does not name competitors or lead with the proprietary Visibility Score. Statements about AI recommendations remain directional and avoid claiming knowledge of a proprietary model’s exact weighting.
 
 Traditional local SEO appears only as a bridge term. The next sentence reframes the distinction: local SEO focuses on page and local search rankings, while GEO builds the entity and trust signals used in AI-first discovery.
